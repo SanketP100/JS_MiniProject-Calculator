@@ -10,10 +10,12 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #252424;
     display: flex;
@@ -93,8 +95,27 @@ button:hover{
 
 
 @media(max-width:600px){
+    html,
+    body {
+        height: fit-content;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    
+    body {
+        height: fit-content;
+        width: 100%;
+        background-color: #252424;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .calculater {
-        height:95%;
+        height:100%;
         width: 95%;
         padding: 15px;
     }
@@ -105,7 +126,7 @@ button:hover{
         }
         button{
         width: 12vw;
-        height: 22vw;
+        height: 17vw;
         margin: 4vw;
         font-size: 8.5vw;
         }
